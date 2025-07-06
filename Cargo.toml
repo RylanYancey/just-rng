@@ -2,10 +2,10 @@
 name = "justrng"
 version = "0.1.0"
 edition = "2024"
-license = "MIT OR Apache-2.0"
+license-file = "LICENSE.txt"
 authors = ["Rylan Yancey"]
 description = "RNG for people who just want to generate random numbers"
-
+repository = "https://github.com/RylanYancey/just-rng"
 
 [features]
 default = []

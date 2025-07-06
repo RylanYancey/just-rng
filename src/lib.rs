@@ -47,11 +47,10 @@
 //! 
 //! An index-based rng that is lower quality than WyRand, but
 //! is very fast. Permutations are primarily used in procedural 
-//! generation to hash vector coordinates. 
-//! 
-//! Unlike standard RNGs, Permutations do not update any state 
-//! when they are used. It will produce the same value every time 
-//! if the mix input (and seed) is the same. 
+//! generation to hash vector coordinates. Unlike standard RNGs, 
+//! Permutations do not update any state when they are used. 
+//! It will produce the same value every time if the mix input 
+//! (and seed) is the same. 
 //! 
 //! ```
 //! use glam::IVec3;
