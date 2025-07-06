@@ -1,0 +1,21 @@
+[package]
+name = "justrng"
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+authors = ["Rylan Yancey"]
+description = "RNG for people who just want to generate random numbers"
+
+
+[features]
+default = []
+glam = ["dep:glam"]
+
+[dependencies]
+glam = { version = "0.30.4", optional = true }
+
+[target.'cfg(target_arch="wasm32")'.dependencies]
+web-time = "1.1.0"
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+getrandom = "0.3.3"
